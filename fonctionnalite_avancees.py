@@ -50,17 +50,17 @@ with st.sidebar:
         selection = option_menu(menu_title="Home", options=["Accueil", "Photos"], icons=["house", "camera"], menu_icon="cast", default_index=0, )
         authenticator.logout("Déconnexion")
 
-    if selection == "Accueil":
-        st.write("Bienvenue !")
-        st.image("hello_there.gif", width=2000)
-    elif selection == "Photos":
-        st.write("Bienvenue sur l'album photo des corgis !")
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.image("corgi_eyes.jpg")
-        with col2:
-            st.image("corgi_lunettes.jpg")
-        with col3:
-            st.image("corgi_doubt.jpg")
+        if selection == "Accueil":
+            st.write("Bienvenue !")
+            st.image("hello_there.gif", width=2000)
+        elif selection == "Photos":
+            st.write("Bienvenue sur l'album photo des corgis !")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.image("corgi_eyes.jpg")
+            with col2:
+                st.image("corgi_lunettes.jpg")
+            with col3:
+                st.image("corgi_doubt.jpg")
         
         
