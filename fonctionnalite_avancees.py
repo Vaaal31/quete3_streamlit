@@ -48,7 +48,7 @@ with st.sidebar:
         st.warning('Les champs username et mot de passe doivent être rempli')
     if st.session_state["authentication_status"] is True:
         selection = option_menu(menu_title="Home", options=["Accueil", "Photos"], icons=["house", "camera"], menu_icon="cast", default_index=0, )
-    authenticator.logout("Déconnexion")
+        authenticator.logout("Déconnexion")
 
 if selection == "Accueil":
     st.write("Bienvenue !")
